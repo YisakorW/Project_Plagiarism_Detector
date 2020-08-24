@@ -1,0 +1,19 @@
+cloudwatch logs generated these after executing the cell below:
+test_y_preds = predictor.predict(test_x)
+"""
+DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
+"""
+# test that your model generates the correct number of labels
+assert len(test_y_preds)==len(test_y), 'Unexpected number of predictions.'
+print('Test passed!')
+
+
+
+errors:
+sagemaker_containers._errors.ClientError: Expected object of scalar type Float but got scalar type Double for argument #4 'mat1'
+RuntimeError: Expected object of scalar type Float but got scalar type Double for argument #4 'mat1'
+2020-08-24 15:18:22,397 flask.app    ERROR    Exception on /invocations [POST]
+model_info: {'input_features': 3, 'hidden_dim': 20, 'output_dim': 1}
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+
